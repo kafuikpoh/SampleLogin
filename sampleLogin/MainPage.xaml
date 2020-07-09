@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="sampleLogin.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Visual="Material"
+    mc:Ignorable="d">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="14" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="14" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout
+            Grid.Row="1"
+            Grid.Column="1"
+            Spacing="0">
+            <Image
+                HeightRequest="150"
+                Source="logo.png"
+                WidthRequest="150" />
+            <Label
+                FontAttributes="Bold"
+                FontSize="32"
+                HorizontalOptions="Center"
+                Text="HillTrust Pay"
+                TextColor="Black" />
+            <StackLayout Margin="0,30,0,0" Spacing="25">
+                <Entry Placeholder="Phone number or Email" PlaceholderColor="Indigo" />
+                <Label
+                    FontSize="13"
+                    HorizontalOptions="End"
+                    Text="forgot password?" />
+
+                <Button
+                    BackgroundColor="Indigo"
+                    Text="LOGIN"
+                    TextColor="White" />
+
+                <Label
+                    FontAttributes="Italic"
+                    FontSize="12"
+                    HorizontalOptions="End"
+                    Text="Don't have an account? Signup NOW!" />
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>
